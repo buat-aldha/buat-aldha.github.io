@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            color: #e74c3c;
+            animation: slideIn 1.5s ease-out;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .heart {
+            color: #e74c3c;
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite;
+        }
+        button {
+            background-color: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeIn 4s ease-in-out;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    		<img src="kita.jpg" style="width:250px; height:200px;">
+        <h1>Maaf in aku yah cantikk</h1>
+        <p>Aku mau minta maaf dari lubuk hati ku yang paling dalam buat kamu.</p>
+        <p>Aku tahu aku telah membuat kesalahan dan menyakiti hatimu.</p>
+        <p>Aku janji akan lebih baik dan tidak mengulangi kesalahan ini lagi.</p>
+        <p class="heart">❤️</p>
+        <button onclick="alert('Aku sangat mencintaimu!')">Aku Memaafkanmu</button>
+    </div>
+</body>
+</html>
